@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RKBilskadecenter</title>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="slider()">
+    
+    <main id="main">
+        <nav><img src="images/rk.png" alt="RKBilskadecenters logo" class="logo">
+            <div>
+                <a  class="nav-a" href="#main">Hem</a>
+                <a class="nav-a" href="#map">Hitta oss</a>
+            <a  class="nav-a" href="#about-oss">Om oss</a>
+            <a  class="nav-a" href="#galeri">Galeri</a>
+            
+            </div>
+           
+        </nav>
+        <div id="slajd">
+
+        </div>
+        
+    </main>
+    <header>
+       
+        <h1>Wälkommen till RK Bilskadecenter AB</h1>
+        <h2>Skadad bil? Inga problem det fixar vi!</h2>
+       
+    </header>
+    <div id="about-oss">
+       
+        <div class="info1">
+            <p>
+                R.K Bilskadecenter är ett relativt ny startade företag dock med många års erfaranhet inom bilplåtskador. Vi följer alltid fabrikantens anvisningar och uppdaterar vår kunskap om dessa löpande. Vi åtar oss stora så som små uppdrag. Noggrannhet och snabba leveranser är vår starka sida.
+            </p>
+        </div>
+        <div class="info">
+            <p>
+                Våra tjänster består av bilplåt reperationer samt lackering av alla bilmärke och även bilbärgning. Oavsätt hur stor din skada är, har vi kompetens att återställa den till ny skick.
+            </p>
+        </div>
+        <div class="info">
+            <p>R.K Bilskadecenter AB<br>
+                Blästergatan 5<br>
+                212 22 Malmö<br>
+                Tel. Roban +46(0)762696401</p>
+        </div>
+        <section id="map">
+            <h3>Hitta oss</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2253.7399344817036!2d13.033081016209733!3d55.60653968051449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a3dbbdaa39a1%3A0xf0e87581e9a37728!2sBl%C3%A4stergatan%205%2C%20212%2022%20Malm%C3%B6!5e0!3m2!1ssv!2sse!4v1627739336632!5m2!1ssv!2sse" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+          </section>
+
+    </div>
+    <section id="galeri">
+        <h4>Exempel på våra jobb</h4>
+        <div class="bilder">
+            <img src="images/benk1.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/benk2.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/benk3.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/benk4.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/b5.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/b6.JPG" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/b7.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/b8.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/b9.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/b10.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/b11.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/b12.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/b13.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/b14.jpg" alt="">
+        </div>
+        <div class="bilder">
+            <img src="images/b16.jpg" alt="">
+        </div>
+
+    </section>
+    <footer>
+        <div>
+            <a class="nav-f" href="#main">Hem</a>
+        <a  class="nav-f" href="#about-oss">Om oss</a>
+        <a  class="nav-f" href="#galeri">Galeri</a>
+        <a  class="nav-f" href="">Kontakt</a>
+        </div>
+    </footer>
+    <script type="text/javascript">
+
+        var numer = Math.floor(Math.random()*4)+1;
+
+        function hide()
+        {
+            $("#slajd").fadeOut(500);
+        }
+        function slider()
+        {
+                numer ++ ; if (numer>4) numer = 1;
+
+                var plik = "<img src=\"images/slajd"+numer+".png\"/>";
+
+                document.getElementById("slajd").innerHTML=plik;
+
+                $("#slajd").fadeIn(500);
+                
+                setTimeout("slider()", 5000);
+
+                setTimeout("hide()", 4500);
+
+        }
+        </script>
+    
+    
+</body>
+</html>

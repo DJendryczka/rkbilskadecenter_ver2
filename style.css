@@ -1,0 +1,139 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: rgba(228, 228, 218, 0.61);
+    
+}
+main {
+    width: 100%;
+    height: auto;
+    margin-top: -20px;
+    
+}
+#slajd {
+    width: 100%;
+}
+
+
+
+nav {
+    width: 100%;
+    background-color: rgba(42, 43, 41, 0.39);
+    position: fixed;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.nav-a {
+    margin-right: 30px;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+nav div {
+    margin-top: 25px;
+}
+
+.logo {
+    width: 80px;
+    margin-left: 40px;
+
+}
+
+h1 {
+   /* text-shadow: 3px 5px 11px rgb(34, 23, 23);*/
+  
+    
+}
+
+
+header {
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    border-radius: 20px;
+    /*position: -webkit-sticky;
+    position: sticky;
+    top: 0;*/
+   
+}
+#about-oss {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+     
+}
+p {
+    font-size: 1.5em;
+}
+.info1 {
+    width: 360px;
+    height: 250px;
+    padding: 20px;
+    margin-top: 170px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(146, 140, 140, 0.034);
+    box-shadow: 3px 4px 5px rgb(196, 188, 188);
+   
+   
+}
+.info {
+    width: 360px;
+    height: 250px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(146, 140, 140, 0.034);
+    box-shadow: 3px 4px 5px rgb(196, 188, 188);
+   
+   
+}
+#map {
+    margin-top: 190px;
+    margin-bottom: 120px;
+    text-align: center;
+}
+h3 {
+    margin-top: 190px;
+    font-size: 2em;
+}
+h4 {
+    margin-top: 190px;
+    font-size: 2em;
+}
+#galeri {
+    width: 100%;
+    text-align: center; 
+    margin-top: 180px;
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.bilder {
+   margin: 10px;
+    display: inline-block;
+}
+footer {
+    width: 100%;
+    margin: 20px;
+  
+    
+}
+.nav-f {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.3em;
+    color: black;
+}
